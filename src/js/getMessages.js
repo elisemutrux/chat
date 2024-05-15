@@ -19,10 +19,12 @@ const prepareMessage = function (message) {
 
   // On retourne le HTML du message
   return `
-  <div class="message${message.author === author && " is-mine"}">
+  <div class="message${message.author === author ? " is-mine" : ""}">
     <div class="message-user">${message.author}</div>
+    <div class="message-inner">
     <div class="message-text">${message.text}</div>
     <div class="message-time">${formattedTime}</div>
+    </div>
   </div>`;
 };
 
@@ -35,7 +37,7 @@ const getMessages = function () {
   const messagesQuery = query(
     collection(db, "messages"),
     orderBy("time", "desc"),
-    limit(20)
+    limit(30)
   );
 
   // On écoute les changements sur la collection 'messages'

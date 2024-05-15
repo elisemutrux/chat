@@ -1,0 +1,18 @@
+.top-page {
+  background: #fce9a7;
+  color: #44752e;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 22px;
+  }
+}
+
+.button-appel {
+  padding-left: 40px;
+}

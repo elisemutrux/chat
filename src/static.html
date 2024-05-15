@@ -5,9 +5,21 @@
     <title>Chat - static</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <a href="index.html">Version dynamique</a>
+    <div class="top-page">
+      <a href="index.html">Version dynamique</a>
+      <div class="top-page-button">
+        <img src="../src/img/button-phone.svg" />
+        <img class="button-appel" src="../src/img/button-appel.svg" />
+      </div>
+    </div>
 
     <div class="messages">
       <div class="message is-mine">
@@ -101,10 +113,12 @@
         </div>
       </div>
       <div class="message is-mine">
-        <div class="message-time">08:57:45</div>
         <div class="message-user">Nicolas</div>
-        <div class="message-text">
-          Ça semble être une bonne journée pour tout le monde !
+        <div class="message-inner">
+          <div class="message-text">
+            Ça semble être une bonne journée pour tout le monde !
+          </div>
+          <div class="message-time">08:57</div>
         </div>
       </div>
       <div class="message">
@@ -113,16 +127,27 @@
         <div class="message-text">Oui, c'est sûr !</div>
       </div>
       <div class="message">
-        <div class="message-time">09:02:40</div>
         <div class="message-user">Jean</div>
-        <div class="message-text">Bonne journée à tous !</div>
+        <div class="message-inner">
+          <div class="message-text">Bonne journée à tous !</div>
+          <div class="message-time">09:02</div>
+        </div>
       </div>
     </div>
 
     <form class="form-size">
-      <input type="text" name="author" placeholder="Nom" />
-      <input type="text" name="text" placeholder="Message" />
-      <button type="submit">Envoyer</button>
+      <input class="form-name" type="text" name="author" placeholder="name" />
+      <div class="form-messages">
+        <input
+          class="form-message"
+          type="text"
+          name="text"
+          placeholder="type in message"
+        />
+        <button class="form-send" type="submit">
+          <img src="../src/img/button-send.svg" />
+        </button>
+      </div>
     </form>
 
     <script src="js/main.js" type="module"></script>

@@ -1,0 +1,51 @@
+.form-size {
+  background-image: url(../img/circle-pattern-bottom.png);
+  background-position-y: 100%;
+  border: none;
+  display: flex;
+  gap: 10;
+  padding: 108px 35px 30px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.form-name::placeholder,
+.form-message::placeholder {
+  color: #a6c996;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-message,
+.form-send {
+  border: none;
+  background: none;
+}
+
+.form-name,
+.form-messages {
+  border: none;
+  background: #fef8e1;
+}
+
+.form-send {
+  background: #fce9a7;
+  padding: 6px 14px;
+  border-radius: 23px;
+}
+
+.form-messages {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+  padding: 10px 10px 10px 30px;
+  flex-grow: 1;
+}
+
+.form-name {
+  padding: 15px 10px 15px 30px;
+  border-radius: 30px;
+}

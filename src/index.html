@@ -7,18 +7,31 @@
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
-    <a href="static.html">Version statique</a>
-
+    <div class="top-page">
+      <a href="static.html">Version statique</a>
+      <div class="top-page-button">
+        <img src="../src/img/button-phone.svg" />
+        <img class="button-appel" src="../src/img/button-appel.svg" />
+      </div>
+    </div>
     <!-- Ne pas enlever data-messages! -->
     <div class="messages" data-messages></div>
 
     <!-- Ne pas enlever data-form, et ne pas changer le name des inputs! -->
     <form class="form-size" data-form>
-      <input type="text" name="author" placeholder="Nom" />
-      <input type="text" name="text" placeholder="Message" />
-      <button type="submit">Envoyer</button>
+      <input class="form-name" type="text" name="author" placeholder="Name" />
+      <div class="form-messages">
+        <input
+          class="form-message"
+          type="text"
+          name="text"
+          placeholder="type in message"
+        />
+        <button class="form-send" type="submit">
+          <img src="../src/img/button-send.svg" />
+        </button>
+      </div>
     </form>
-
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
